@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2 class="logo">Diamond Hotel</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="information.html">Room Information</a>
+        <a href="booking.html">Booking Form</a>
+    </nav>
+</header>
+
+<h2 style="text-align:center;">Room Booking Form</h2>
+
+<form action="insert.php" method="POST">
+
+    <label>Guest ID</label><br>
+    <input type="text" name="GuestID" placeholder="e.g., G006" required><br><br>
+
+    <label>Guest Name</label><br>
+    <input type="text" name="GuestName" required><br><br>
+
+    <label>Room Type</label><br>
+    <select name="RoomType" required>
+        <option value="Single Room">Single Room</option>
+        <option value="Double Room">Double Room</option>
+        <option value="Deluxe Suite">Deluxe Suite</option>
+        <option value="Family Room">Family Room</option>
+    </select><br><br>
+
+    <label>Check In Date</label><br>
+    <input type="date" name="CheckInDate" required><br><br>
+
+    <label>Check Out Date</label><br>
+    <input type="date" name="CheckOutDate" required><br><br>
+
+    <input type="submit" value="Book Room">
+
+</form>
+
+<footer>
+    <p>Diamond Hotel © 2026</p>
+</footer>
+
+</body>
+</html>

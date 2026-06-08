@@ -1,0 +1,178 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f6f0e8;
+    color:#5a4a42;
+}
+
+header{
+    background:#cdb79e;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    color:#4b3f37;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    background:#d8c7b5;
+    color:#4b3f37;
+    text-decoration:none;
+    padding:12px 25px;
+    margin:5px;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#c2ab91;
+}
+
+.social {
+    margin-top: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    font-size: 14px;
+    margin: 8px;
+    color: white;
+    background: #4b3f37;
+    display: inline-flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    background-image:url("https://images.unsplash.com/photo-1566073771259-6a8506099945");
+    background-size:cover;
+    background-position:center;
+    height:450px;
+    text-align:center;
+    color:white;
+    padding-top:180px;
+}
+
+.hero h2{
+    font-size:40px;
+}
+
+img{
+    display:block;
+    margin:20px auto;
+    border-radius:15px;
+}
+
+form{
+    width:350px;
+    margin:20px auto;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+}
+
+input,select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+}
+
+input[type="submit"]{
+    background:#a88a6a;
+    color:white;
+    border:none;
+}
+
+footer{
+    background:#cdb79e;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+table{
+    width:80%;
+    margin:auto;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#d8c7b5;
+}
+
+th,td{
+    border:1px solid #bca58a;
+    padding:10px;
+    text-align:center;
+}
+
+.logo{
+    font-size:40px;
+    letter-spacing:8px;
+    color:#4b3f37;
+    margin:0;
+}
+
+.rooms{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin:20px;
+}
+
+.room{
+    text-align:center;
+    background:white;
+    padding:15px;
+    border-radius:15px;
+    width:280px;
+}
+
+.room img{
+    width:250px;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.book-btn{
+    display:inline-block;
+    background:#a88a6a;
+    color:white;
+    text-decoration:none;
+    padding:8px 15px;
+    border-radius:20px;
+}
+
+.book-btn:hover{
+    background:#8b6f47;
+}
+
+/* ======================================================= */
+/* ⏬ الكود الجديد لترتيب وإظهار الصور جنب بعضها المضاف هنا ⏬ */
+/* ======================================================= */
+
+.gallery-container {
+    display: flex;             /* يصفّ الصور جنب بعض */
+    justify-content: center;   /* يوسطهم في نصف الصفحة */
+    gap: 20px;                 /* مسافة حلوة ومناسبة بين الصورتين */
+    margin: 30px auto;         /* إبعادهم عن العناصر اللي فوق واللي تحت */
+    max-width: 90%;            /* يمنع الصور من الخروج عن حدود الشاشة */
+}
+
+.gallery-container img {
+    width: 45%;                /* كل صورة تأخذ نصف الشاشة تقريباً لتجلسا جنب بعض */
+    height: auto;              /* الحفاظ على أبعاد ومظهر الصورة الأصلية */
+    border-radius: 12px;       /* جعل زوايا الصور منحنية وناعمة بشكل عصري */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* ظل أنيق لإعطاء عمق ومظهر احترافي */
+}
